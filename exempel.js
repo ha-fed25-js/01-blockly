@@ -54,8 +54,28 @@ while (timme < 24) {
 		console.log('Förmiddagslektion')
 	} else if (timme >= 13 && timme <= 15) {
 		console.log('Eftermiddagslektion')
-	} else {
+	} else {  // timme <= 8 || timme >= 16
 		console.log(timme)
 	}
 	timme = timme + 1;
 }
+
+
+// Lika rätt - men inte rekommenderat
+// let timme = 0;
+// while (timme < 24) {
+// 	if (timme == 12) {
+// 		console.log('Dags för lunch!')
+// 	} else {
+// 		if (timme >= 9 && timme <= 11) {
+// 			console.log('Förmiddagslektion')
+// 		} else {
+// 			if (timme >= 13 && timme <= 15) {
+// 				console.log('Eftermiddagslektion')
+// 			} else {
+// 				console.log(timme)
+// 			}
+// 		}
+// 	}
+// 	timme = timme + 1;
+// }
